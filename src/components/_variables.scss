@@ -1,2 +1,40 @@
 $color-example: #ff0000;
 $fontsize-example: 16px;
+
+
+$white:#FFFFFF;
+$white_smoke:#F5F5F5;
+$gray_desertStorm:#ECE9E6;
+$gray_gainsboro:#DDDDDD;
+$gray_nobel:#999999;
+$orange_zorba:#A19283;
+$orange_bistre :#442606;
+$black_50:rgba(0,0,0,0.5);
+$black:#000000;
+
+$XS:12px;
+$S:14px;
+$M:16px;
+$L:20px;
+$XL:36px;
+$XXL:40px;
+
+$fontfamily-mincho:"Noto Serif JP","Times New Roman";
+$fontfamily-gothic:"Robote","Noto Sans JP","Times New Roman";
+
+
+$xl:1140px;
+$min:960px;
+$m:720px;
+$s:540px;
+
+
+
+
+ 
+
+body{
+    font-family: $fontfamily-gothic;
+}
+
+

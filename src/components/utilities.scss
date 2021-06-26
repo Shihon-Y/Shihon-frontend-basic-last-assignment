@@ -1,7 +1,4 @@
-/* 使用例 */
-h2 {
-  font-size: 38px;
-}
+@use "./src/components/_variables.scss as *";
 
 body{
   font-family: $fontfamily-gothic;

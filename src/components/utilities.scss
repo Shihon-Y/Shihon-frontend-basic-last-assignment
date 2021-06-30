@@ -1,5 +1,9 @@
-@use "./variables.scss as *";
+@use "./variables.scss" as *;
 
-body{
+h2 {
+  font-size: 38px;
+}
+
+body {
   font-family: $fontfamily-gothic;
 }

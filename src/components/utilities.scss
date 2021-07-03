@@ -1,4 +1,9 @@
-/* 使用例 */
+@use "./variables.scss" as *;
+
 h2 {
   font-size: 38px;
+}
+
+body {
+  font-family: $fontfamily-gothic;
 }

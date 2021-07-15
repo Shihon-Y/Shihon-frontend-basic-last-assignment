@@ -1,86 +1,30 @@
 @use "../../variables" as *;
 
-span {
-  display: flex;
-}
 .btn {
-  flex-direction: row;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 180px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
   color: $white;
   font-size: $M;
-  background-color: $black;
-  height: 55px;
-  width: 200px;
-  left: 20px;
-  top: 20px;
-  padding: 0px, 16px;
-  margin-top: 17.5px;
-  margin-left: 74px;
   border-radius: 0px;
+  background-color: $black;
   font-family: $fontfamily-gothic;
-  transition: ease;
-}
-
-.btn:hover {
-  background-color: $orange_bistre;
-  color: $white;
-}
-
-@media screen and (max-width: $xl) {
-  .btn {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-    font-size: $M;
-    background-color: $black;
-    margin: 0px 0px;
-    height: 55px;
-    width: 200px;
-    left: 20px;
-    top: 20px;
-    padding: 0px, 16px;
-    margin-top: 17.5px;
-    margin-left: 74px;
-    border-radius: 0px;
-    font-family: $fontfamily-gothic;
-    transition: ease;
-  }
+  transition: all 0.2s 0s ease;
 }
 .btn:hover {
   background-color: $orange_bistre;
   color: $white;
 }
 
-@media screen and (max-width: $lg) {
+@media screen and (min-width: $sm) {
   .btn {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-    font-size: $M;
-    background-color: $black;
-    height: 55px;
-    width: 150px;
-    left: 20px;
-    top: 254px;
-    padding: 0px, 16px;
-    margin-top: 17.5px;
-    margin-left: 49px;
-    border-radius: 0px;
-    font-family: $fontfamily-gothic;
-    transition: ease;
-  }
-  .btn:hover {
-    background-color: $orange_bistre;
-    color: $white;
-  }
-}
-
-@media screen and (max-width: $md) {
-  .btn {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: $white;
@@ -88,19 +32,64 @@ span {
     background-color: $black;
     height: 45px;
     width: 180px;
-    left: 20px;
-    top: 488px;
-    padding: 0px, 16px;
-    margin-top: 12.5px;
-    margin-left: 64px;
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    transition: all 0.2s 0s ease;
     border-radius: 0px;
     font-family: $fontfamily-gothic;
-    transition: ease;
   }
-  @media screen and (max-width: $md) {
+  .btn:hover {
+    background-color: $orange_bistre;
+    color: $white;
+  }
+  @media screen and (min-width: $md) {
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-size: $M;
+      background-color: $black;
+      height: 55px;
+      width: 150px;
+      padding-top: 0px;
+      padding-right: 16px;
+      padding-bottom: 0px;
+      padding-left: 16px;
+      transition: all 0.2s 0s ease;
+      border-radius: 0px;
+      font-family: $fontfamily-gothic;
+    }
     .btn:hover {
       background-color: $orange_bistre;
       color: $white;
     }
+  }
+
+  @media screen and (min-width: $lg) {
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-size: $M;
+      background-color: $black;
+      margin: 0px 0px;
+      height: 55px;
+      width: 200px;
+      padding-top: 0px;
+      padding-right: 16px;
+      padding-bottom: 0px;
+      padding-left: 16px;
+      transition: all 0.2s 0s ease;
+      border-radius: 0px;
+      font-family: $fontfamily-gothic;
+    }
+  }
+  .btn:hover {
+    background-color: $orange_bistre;
+    color: $white;
   }
 }

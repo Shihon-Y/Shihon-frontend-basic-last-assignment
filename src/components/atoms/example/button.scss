@@ -1,34 +1,35 @@
 @use "../../variables" as *;
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  width: 180px;
-  padding: 0px, 16px, 0px, 16px;
-  color: $white;
-  font-size: $M;
-  background-color: $black;
-  transition: all 0.2s 0s ease;
-  border-radius: 0px;
+  & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 180px;
+    padding: 0 16px 0 16px;
+    color: $white;
+    font-size: $S;
+    background-color: $black;
+    border-radius: 0;
+  }
 
-  .btn:hover {
+  &:hover {
     background-color: $orange_bistre;
     color: $white;
+    transition: all 0.2s 0s ease;
   }
 
   @media screen and (min-width: $md) {
-    .btn {
+    & {
       height: 55px;
       width: 150px;
     }
-  }
 
-  @media screen and (min-width: $lg) {
-    .btn {
-      height: 55px;
-      width: 200px;
+    @media screen and (min-width: $lg) {
+      & {
+        width: 200px;
+      }
     }
   }
 }

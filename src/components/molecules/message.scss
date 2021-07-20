@@ -1,55 +1,31 @@
 @use "../variables" as *;
 
-p {
-  align-items: center;
-  text-align: center;
-  font-family: $fontfamily-mincho;
-  font-size: $XL;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-}
+.title {
+  h1 {
+    text-align: center;
+    align-items: center;
+    font-family: $fontfamily-mincho;
+    font-size: $L;
+    padding: 0, 0, 6px, 0;
+  }
 
-body {
-  align-items: center;
-  text-align: center;
-  font-family: $fontfamily-mincho;
-  font-size: $S;
-}
+  h3 {
+    text-align: center;
+    align-items: center;
+    font-family: $fontfamily-mincho;
+    font-size: $S;
+  }
 
-p {
-  align-items: center;
-  text-align: center;
-  font-family: $fontfamily-mincho;
-  font-size: $XL;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-}
+  @media screen and (min-width: $lg) {
+    .title {
+      h1 {
+        font-size: $XL;
+        padding: 0, 0, 10px, 0;
+      }
 
-body {
-  align-items: center;
-  text-align: center;
-  font-family: $fontfamily-mincho;
-  font-size: $S;
-}
-
-p {
-  align-items: center;
-  text-align: center;
-  font-family: $fontfamily-mincho;
-  font-size: $XL;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-}
-
-body {
-  align-items: center;
-  text-align: center;
-  font-family: $fontfamily-mincho;
-  font-size: $S;
+      h3 {
+        font-size: $S;
+      }
+    }
+  }
 }

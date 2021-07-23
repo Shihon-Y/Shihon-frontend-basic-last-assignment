@@ -1,1 +1,26 @@
 @use "../variables.scss" as *;
+
+.title {
+  display: flex;
+  h1 {
+    font-size: $L;
+    font-family: $fontfamily-mincho;
+  }
+  h4 {
+    font-size: $M;
+    font-family: $fontfamily-gothic;
+    margin-left: 16px;
+    margin-top: 3px;
+  }
+
+  @media screen and (min-width: $lg) {
+    h1 {
+      font-size: $XXL;
+    }
+    h4 {
+      font-size: $M;
+      margin-left: 16px;
+      margin-top: 17px;
+    }
+  }
+}

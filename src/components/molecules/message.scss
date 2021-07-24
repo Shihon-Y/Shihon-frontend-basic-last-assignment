@@ -2,32 +2,28 @@
 
 .title {
   h1 {
-    text-align: center;
-    align-items: center;
     font-family: $fontfamily-mincho;
     font-size: $L;
-    padding: 0, 0, 6px, 0;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   h3 {
-    text-align: center;
-    align-items: center;
-    font-family: $fontfamily-mincho;
+    font-family: $fontfamily-gothic;
     font-size: $S;
-    line-height: 36px;
+    line-height: 28px;
+    text-align: center;
   }
-}
 
-@media screen and (min-width: $lg) {
-  .title {
+  @media screen and (min-width: $lg) {
     h1 {
       font-size: $XL;
-      padding: 0, 0, 10px, 0;
+      margin-bottom: 6px;
     }
 
     h3 {
       font-size: $S;
-      line-height: 28px;
+      line-height: 36px;
     }
   }
 }

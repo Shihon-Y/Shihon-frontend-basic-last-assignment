@@ -2,6 +2,7 @@
 
 .title {
   display: flex;
+  align-items: flex-end;
   h1 {
     font-size: $L;
     font-family: $fontfamily-mincho;
@@ -13,11 +14,9 @@
     font-size: $M;
     font-family: $fontfamily-gothic;
     margin-left: 16px;
-    margin-top: 3px;
+
     @media screen and (min-width: $lg) {
-      font-size: $M;
-      margin-left: 16px;
-      margin-top: 17px;
+      line-height: 53px;
     }
   }
 }

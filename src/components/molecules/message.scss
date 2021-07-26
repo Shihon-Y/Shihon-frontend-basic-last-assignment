@@ -3,26 +3,26 @@
 .title {
   h1 {
     font-family: $fontfamily-mincho;
-    font-size: $L;
+    font-size: $fontsize-L;
     text-align: center;
     margin-bottom: 10px;
   }
 
   h3 {
     font-family: $fontfamily-gothic;
-    font-size: $S;
+    font-size: $fontsize-S;
     line-height: 28px;
     text-align: center;
   }
 
-  @media screen and (min-width: $lg) {
+  @media screen and (min-width: $breakpoints-lg) {
     h1 {
-      font-size: $XL;
+      font-size: $fontsize-XL;
       margin-bottom: 6px;
     }
 
     h3 {
-      font-size: $S;
+      font-size: $fontsize-S;
       line-height: 36px;
     }
   }

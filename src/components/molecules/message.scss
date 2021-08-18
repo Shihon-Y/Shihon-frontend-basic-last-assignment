@@ -1,28 +1,28 @@
 @use "../variables" as *;
 
-.title {
-  h1 {
+.message {
+  h3 {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-L;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
-  h3 {
+  p {
     font-family: $fontfamily-gothic;
     font-size: $fontsize-S;
     line-height: 28px;
     text-align: center;
+    margin-top: 1rem;
   }
 
   @media screen and (min-width: $breakpoints-lg) {
-    h1 {
+    h3 {
       font-size: $fontsize-XL;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
-    h3 {
-      font-size: $fontsize-S;
+    p {
       line-height: 36px;
     }
   }

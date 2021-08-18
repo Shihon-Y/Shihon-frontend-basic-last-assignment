@@ -3,20 +3,23 @@
 .title {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 32px;
   h1 {
     font-size: $fontsize-L;
     font-family: $fontfamily-mincho;
+
     @media screen and (min-width: $breakpoints-lg) {
       font-size: $fontsize-XXL;
     }
   }
-  h4 {
+  .second {
     font-size: $fontsize-M;
     font-family: $fontfamily-gothic;
     margin-left: 16px;
+    align-self: flex-start;
 
     @media screen and (min-width: $breakpoints-lg) {
-      line-height: 53px;
+      align-self: center;
     }
   }
 }

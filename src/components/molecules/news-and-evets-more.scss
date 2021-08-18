@@ -1,6 +1,7 @@
 @use "../variables.scss" as *;
 
-h2 {
+.notice {
+  color: black;
   font-size: $fontsize-S;
 
   i {
@@ -10,5 +11,6 @@ h2 {
   &:hover {
     transition: all 0.2s ease;
     color: $gray_nobel;
+    text-decoration: none;
   }
 }

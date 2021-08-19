@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.message {
+  h3 {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-L;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-S;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: $breakpoints-lg) {
+    h3 {
+      font-size: $fontsize-XL;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 36px;
+    }
+  }
+}

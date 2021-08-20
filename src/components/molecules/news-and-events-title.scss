@@ -16,7 +16,7 @@
     font-size: $fontsize-M;
     font-family: $fontfamily-gothic;
     margin-left: 16px;
-    align-self: flex-start;
+    align-self: center;
 
     @media screen and (min-width: $breakpoints-lg) {
       align-self: center;

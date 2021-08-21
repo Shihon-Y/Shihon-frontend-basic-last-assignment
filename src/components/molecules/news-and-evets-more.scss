@@ -1,0 +1,14 @@
+@use "../variables.scss" as *;
+
+.notice {
+  color: black;
+  font-size: $fontsize-S;
+  i {
+    margin-left: 16px;
+  }
+  &:hover {
+    transition: all 0.2s ease;
+    color: $gray_nobel;
+    text-decoration: none;
+  }
+}

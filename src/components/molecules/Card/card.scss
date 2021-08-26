@@ -5,7 +5,6 @@
   background-color: $white_smoke;
   position: relative;
   align-items: center;
-
   .cardimg {
     width: 540px;
     height: 382px;
@@ -26,6 +25,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    font-family: $fontfamily-gothic;
   }
   .card-body {
     p {
@@ -38,7 +38,6 @@
     .cardimg {
       width: 224px;
       height: 175px;
-
       &:hover {
         width: 268px;
         height: 203px;

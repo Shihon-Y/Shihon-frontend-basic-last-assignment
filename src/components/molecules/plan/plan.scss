@@ -1,1 +1,82 @@
 @use "../../variables.scss" as *;
+
+.planodd {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  flex-direction: column;
+
+  li:nth-child(1) {
+    background-color: $orange_zorba;
+    height: 69px;
+    padding: 20px;
+    color: $white;
+    font-size: $fontsize-L;
+  }
+  li:nth-child(2) {
+    height: 142px;
+    padding: 24px;
+    background-color: $gray_desertStorm;
+  }
+  .¥ {
+    font-size: $fontsize-L;
+  }
+  .price {
+    font-size: $fontsize-XXL;
+  }
+  .monthly {
+    font-size: $fontsize-S;
+  }
+  li:nth-child(n + 3) {
+    height: 60px;
+    padding: 20px;
+    border: solid 1px $gray_desertStorm;
+    @media screen and (min-width: $breakpoints-md) {
+      height: 80px;
+    }
+  }
+}
+
+.planeven {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  flex-direction: column;
+  li:nth-child(1) {
+    background-color: $orange_bistre;
+    height: 69px;
+    padding: 20px;
+    color: $white;
+    font-size: $fontsize-L;
+  }
+  li:nth-child(2) {
+    height: 142px;
+    padding: 24px;
+    background-color: $gray_desertStorm;
+    .¥ {
+      font-size: $fontsize-L;
+    }
+    .price {
+      font-size: $fontsize-XXL;
+    }
+    .monthly {
+      font-size: $fontsize-S;
+    }
+  }
+
+  li:nth-child(n + 3) {
+    border: solid 1px $gray_desertStorm;
+    height: 60px;
+    padding: 20px;
+    @media screen and (min-width: $breakpoints-md) {
+      height: 80px;
+    }
+  }
+  li:nth-child(n) {
+    border-left: solid 5px $orange_bistre;
+    border-right: solid 5px $orange_bistre;
+  }
+  li:nth-child(6) {
+    border-bottom: solid 5px $orange_bistre;
+  }
+}

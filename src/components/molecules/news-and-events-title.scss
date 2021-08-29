@@ -1,0 +1,25 @@
+@use "../variables.scss" as *;
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  h1 {
+    font-size: $fontsize-L;
+    font-family: $fontfamily-mincho;
+
+    @media screen and (min-width: $breakpoints-lg) {
+      font-size: $fontsize-XXL;
+    }
+  }
+  .second {
+    font-size: $fontsize-M;
+    font-family: $fontfamily-gothic;
+    margin-left: 16px;
+    align-self: center;
+
+    @media screen and (min-width: $breakpoints-lg) {
+      align-self: center;
+    }
+  }
+}

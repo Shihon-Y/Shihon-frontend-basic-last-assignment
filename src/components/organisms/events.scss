@@ -1,1 +1,60 @@
 @use "../variables.scss" as *;
+
+.events {
+  width: 460px;
+  height: 580px;
+  background-color: $gray_gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .title {
+    margin-right: 250px;
+  }
+  ul {
+    list-style-type: none;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    li {
+      border: solid 0.5px $gray_gainsboro;
+      background-color: $white;
+      height: 141px;
+      width: 460px;
+      overflow-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      position: relative;
+      line-height: px;
+
+      padding-left: 16px;
+
+      &::before {
+        content: "";
+        width: 221px;
+        height: 141px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        background: url(1.png) no-repeat;
+        background-size: contain;
+      }
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+      &:hover {
+        transition: all 0.2s ease;
+        background-color: $gray_gainsboro;
+      }
+      .date6 {
+        font-size: $fontsize-XS;
+        color: $gray_nobel;
+      }
+    }
+  }
+}

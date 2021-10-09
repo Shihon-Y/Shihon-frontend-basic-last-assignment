@@ -4,10 +4,10 @@
   display: flex;
   background-color: $white_smoke;
   position: relative;
-  align-items: center;
+
   .cardimg {
-    width: 540px;
     height: 382px;
+    width: 100%;
   }
   .vecter {
     width: 0;
@@ -28,21 +28,17 @@
     font-family: $fontfamily-gothic;
   }
   .card-body {
+    text-align: center;
+    margin: auto;
     p {
       font-size: $fontsize-S;
-      text-align: center;
     }
   }
 
   @media screen and (min-width: $breakpoints-md) {
     .cardimg {
-      width: 224px;
       height: 175px;
-      &:hover {
-        width: 268px;
-        height: 203px;
-        transition: all 1.5s ease;
-      }
+      width: 100%;
     }
   }
 }

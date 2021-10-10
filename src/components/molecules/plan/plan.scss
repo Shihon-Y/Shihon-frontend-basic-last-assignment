@@ -2,6 +2,7 @@
 
 .planodd {
   display: flex;
+  padding-inline-start: 0px;
   text-align: center;
   list-style-type: none;
   flex-direction: column;
@@ -12,6 +13,7 @@
     padding: 20px;
     color: $white;
     font-size: $fontsize-L;
+    font-weight: bold;
   }
   li:nth-child(2) {
     height: 142px;
@@ -28,6 +30,8 @@
   }
   .monthly {
     font-size: $fontsize-S;
+    font-weight: bold;
+    padding-top: 16px;
   }
   li:nth-child(n + 3) {
     height: 60px;
@@ -41,6 +45,7 @@
 
 .planeven {
   display: flex;
+  padding-inline-start: 0px;
   text-align: center;
   list-style-type: none;
   flex-direction: column;
@@ -52,6 +57,7 @@
     padding-top: 20px;
     color: $white;
     font-size: $fontsize-L;
+    font-weight: bold;
   }
   li:nth-child(2) {
     height: 142px;
@@ -68,6 +74,8 @@
     }
     .monthly {
       font-size: $fontsize-S;
+      font-weight: bold;
+      padding-top: 16px;
     }
   }
 

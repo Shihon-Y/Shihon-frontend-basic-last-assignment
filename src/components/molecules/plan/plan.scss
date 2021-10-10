@@ -20,9 +20,11 @@
   }
   .¥ {
     font-size: $fontsize-L;
+    font-weight: bold;
   }
   .price {
     font-size: $fontsize-XXL;
+    font-weight: bold;
   }
   .monthly {
     font-size: $fontsize-S;
@@ -42,10 +44,12 @@
   text-align: center;
   list-style-type: none;
   flex-direction: column;
+  border: solid 5px $orange_bistre;
+
   li:nth-child(1) {
     background-color: $orange_bistre;
     height: 69px;
-    padding: 20px;
+    padding-top: 20px;
     color: $white;
     font-size: $fontsize-L;
   }
@@ -53,11 +57,14 @@
     height: 142px;
     padding: 24px;
     background-color: $gray_desertStorm;
+
     .¥ {
       font-size: $fontsize-L;
+      font-weight: bold;
     }
     .price {
       font-size: $fontsize-XXL;
+      font-weight: bold;
     }
     .monthly {
       font-size: $fontsize-S;
@@ -67,16 +74,11 @@
   li:nth-child(n + 3) {
     border: solid 1px $gray_desertStorm;
     height: 60px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     @media screen and (min-width: $breakpoints-md) {
       height: 80px;
     }
-  }
-  li:nth-child(n) {
-    border-left: solid 5px $orange_bistre;
-    border-right: solid 5px $orange_bistre;
-  }
-  li:nth-child(6) {
-    border-bottom: solid 5px $orange_bistre;
   }
 }

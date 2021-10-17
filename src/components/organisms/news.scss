@@ -1,0 +1,49 @@
+@use "../variables" as *;
+
+.newsandevents {
+  width: 460px;
+  height: 595px;
+  background-color: $gray_gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .title {
+    margin-right: auto;
+  }
+  ul {
+    list-style-type: none;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    li {
+      border: solid 0.5px $gray_gainsboro;
+      background-color: $white;
+      height: 85px;
+      width: 460px;
+      padding: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      a {
+        color: $black;
+        text-decoration: none;
+      }
+      &:hover {
+        transition: all 0.2s ease;
+        background-color: $gray_gainsboro;
+      }
+      #date1,
+      #date2,
+      #date3,
+      #date4,
+      #date5 {
+        font-size: $fontsize-XS;
+        color: $gray_nobel;
+      }
+    }
+  }
+}

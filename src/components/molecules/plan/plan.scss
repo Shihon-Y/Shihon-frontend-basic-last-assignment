@@ -34,8 +34,10 @@
     padding-top: 16px;
   }
   li:nth-child(n + 3) {
+    display: flex;
     height: 60px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
     border: solid 1px $gray_desertStorm;
     @media screen and (min-width: $breakpoints-md) {
       height: 80px;
@@ -80,6 +82,9 @@
   }
 
   li:nth-child(n + 3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 1px $gray_desertStorm;
     height: 60px;
     padding-top: 20px;

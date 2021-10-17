@@ -4,41 +4,58 @@
   display: flex;
   background-color: $white_smoke;
   position: relative;
+  border-radius: 0px;
+  border: 0px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-top: 150px solid $white;
+    border-right: 150px solid transparent;
+    z-index: 30;
+  }
 
   .cardimg {
-    height: 382px;
+    height: auto;
     width: 100%;
+    z-index: 10;
   }
-  .vecter {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 150px 150px 0 0;
-    border-color: #ffffff transparent transparent transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+
   .card-title {
     font-size: $fontsize-L;
     color: $orange_bistre;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 6px;
     font-family: $fontfamily-gothic;
+    font-weight: bold;
+    z-index: 50;
   }
+
   .card-body {
+    flex-direction: column;
     text-align: center;
-    margin: auto;
+
     p {
       font-size: $fontsize-S;
+    }
+    .btn {
+      margin: auto;
     }
   }
 
   @media screen and (min-width: $breakpoints-md) {
+    .imageframe {
+      overflow: hidden;
+    }
     .cardimg {
-      height: 175px;
+      height: auto;
       width: 100%;
+      &:hover {
+        transform: scale(1.2);
+
+        transition: all 0.5s ease;
+      }
     }
   }
 }

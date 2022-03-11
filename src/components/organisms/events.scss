@@ -1,0 +1,112 @@
+@use "../variables.scss" as *;
+
+.events {
+  height: 560px;
+  background-color: $gray_gainsboro;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin-right: auto;
+  }
+
+  .list {
+    .firstlist {
+      display: flex;
+      text-decoration: none;
+      width: 459px;
+      height: 141px;
+      background-color: $white;
+      list-style-type: none;
+      border: solid 0.5px $gray_gainsboro;
+
+      .firstimg {
+        width: 221px;
+      }
+      .p1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-left: 24px;
+        color: $black;
+        &:hover {
+          transition: all 0.2s ease;
+          color: $orange-bistre;
+        }
+        .date6 {
+          font-size: $fontsize-XS;
+          color: $gray_nobel;
+        }
+      }
+    }
+
+    .secondlist {
+      display: flex;
+      text-decoration: none;
+      width: 459px;
+      height: 141px;
+      background-color: $white;
+      list-style-type: none;
+      border: solid 0.5px $gray_gainsboro;
+
+      .secondimg {
+        width: 221px;
+      }
+      .p2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin-left: 24px;
+        color: $black;
+        &:hover {
+          transition: all 0.2s ease;
+          color: $orange-bistre;
+        }
+        .date6 {
+          font-size: $fontsize-XS;
+          color: $gray_nobel;
+        }
+      }
+    }
+    .thirdlist {
+      display: flex;
+      text-decoration: none;
+      width: 459px;
+      height: 141px;
+      background-color: $white;
+      list-style-type: none;
+      border: solid 0.5px $gray_gainsboro;
+
+      .thirdimg {
+        width: 221px;
+      }
+      .p3 {
+        margin-left: 24px;
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .line-clamp {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+        }
+        &:hover {
+          transition: all 0.2s ease;
+          color: $orange-bistre;
+        }
+
+        .date6 {
+          font-size: $fontsize-XS;
+          color: $gray_nobel;
+        }
+      }
+    }
+  }
+  .notice {
+    margin-left: 346px;
+  }
+}
